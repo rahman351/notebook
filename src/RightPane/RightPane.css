@@ -1,17 +1,23 @@
 .right-main{
-    background-color: gray;
     display: grid;
-    grid-template-rows: 0.3fr 0.7fr;
+    grid-template-rows: 0.1fr 0.9fr;
 }
 .right-top{
-    background-color: pink;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .right-bottom{
-    background-color: olive;
     box-sizing: border-box;
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+.right-bottom::-webkit-scrollbar{
+    background-color: transparent;
+}
+
+.right-bottom::-webkit-scrollbar-thumb{
+    background-color: aqua;
+    border-radius: 10px;
 }
