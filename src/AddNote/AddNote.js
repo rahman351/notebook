@@ -7,7 +7,7 @@ const AddNote = (props) => {
 
     const [showFull,setShowFull]=useState(false);
     const [title,setTitle]=useState('');
-    const [color,setColor]=useState('aqua');
+    const [color,setColor]=useState('#3399ff');
     const [content,setContent]=useState('');
     const [tag,setTag]=useState('Personal');
 
