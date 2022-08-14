@@ -8,7 +8,7 @@ const ShowNotes = (props) => {
             <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet"/>
             {props.notes.map(current =>
                 <div className="note-container" style={{backgroundColor: current.color}}>
-                    <div className="note-title">{current.title}</div>
+                    <div className="note-title"><b>{current.title}</b></div>
                     <div className="note-content">{current.content}</div>
                 </div>
             )}
