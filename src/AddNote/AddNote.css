@@ -57,12 +57,20 @@
     border-radius:10px;
     margin-right:10px;
 }
+.choose-color-3399ff:hover{
+    border-radius:0px;
+    cursor: pointer;
+}
 .choose-color-ff99cc{
     background-color: #ff99cc;
     width:20px;
     height:20px;
     border-radius:10px;
     margin-right:10px;
+}
+.choose-color-ff99cc:hover{
+    border-radius:0px;
+    cursor: pointer;
 }
 .choose-color-ffcc66{
     background-color: #ffcc66;
@@ -71,6 +79,10 @@
     border-radius:10px;
     margin-right:10px;
 }
+.choose-color-ffcc66:hover{
+    border-radius:0px;
+    cursor: pointer;
+}
 .choose-color-99ff99{
     background-color: #99ff99;
     width:20px;
@@ -78,12 +90,20 @@
     border-radius:10px;
     margin-right:10px;
 }
+.choose-color-99ff99:hover{
+    border-radius:0px;
+    cursor: pointer;
+}
 .choose-color-ff9966{
     background-color: #ff9966;
     width:20px;
     height:20px;
     border-radius:10px;
     margin-right:10px;
+}
+.choose-color-ff9966:hover{
+    border-radius:0px;
+    cursor: pointer;
 }
 .color-picker{
     display: flex;
