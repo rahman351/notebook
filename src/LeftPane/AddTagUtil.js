@@ -3,7 +3,7 @@ export default function addTag(newTag){
     exsistingdata=JSON.parse(exsistingdata);
     
     
-    if(!exsistingdata.tags.includes(newTag)){
+    if(newTag!='All' && (!exsistingdata.tags.includes(newTag))){
         exsistingdata.tags.push(newTag);
         localStorage.setItem("notebook",JSON.stringify(exsistingdata));
     }
