@@ -3,7 +3,7 @@ import AddNote from '../AddNote/AddNote';
 import ShowNotes from '../ShowNotes/ShowNotes';
 import { useState } from 'react';
 
-const RightPane = () => {
+const RightPane = (props) => {
     const [notes, setNotes] = useState(JSON.parse(localStorage.getItem("notebook")).data);
     return (  
         <div className="right-main">
@@ -11,7 +11,7 @@ const RightPane = () => {
                 <AddNote setNotes={setNotes}/>
             </div>
             <div className="right-bottom">
-                <ShowNotes notes={notes} />
+                <ShowNotes notes={notes} tag={props.tag}/>
             </div>
         </div>
     );

@@ -1,7 +1,9 @@
 import './MainContainer.css'
 import LeftPane from '../LeftPane/LeftPane';
 import RightPane from '../RightPane/RightPane';
+import { useState } from 'react';
 const MaainContainer = () => {
+    const [tag,setTag]=useState('Personal');
     return ( 
         <div className="main-container">
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -12,8 +14,8 @@ const MaainContainer = () => {
                 <div className="info">Source Code : <a href="https://github.com/rahman351/notebook">https://github.com/rahman351/notebook</a></div>
             </div>
             <div className="main-bottom-container">
-                <LeftPane/>
-                <RightPane/>
+                <LeftPane setTag={setTag}/>
+                <RightPane tag={tag}/>
             </div>
         </div>
      );

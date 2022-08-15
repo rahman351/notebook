@@ -11,6 +11,8 @@ const AddNote = (props) => {
     const [content,setContent]=useState('');
     const [tag,setTag]=useState('Personal');
 
+    var allTags=["Personal","Work","Sports","Others"];
+
     
     useEffect(()=>{
         window.addEventListener("click", function(e) {
@@ -34,7 +36,11 @@ const AddNote = (props) => {
             {
                 showFull && 
                     <div className="addnote-options">
-                    <span>qwerty</span>
+                    <select onChange={(e)=>{setTag(e.target.value)}}>
+                        {allTags.map(currentag=>{
+                            return <option value={currentag}>{currentag}</option>
+                        })}
+                    </select>
                     <button onClick={add}>save</button>
                     </div>
             }
