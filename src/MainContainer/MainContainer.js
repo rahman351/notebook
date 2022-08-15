@@ -3,7 +3,7 @@ import LeftPane from '../LeftPane/LeftPane';
 import RightPane from '../RightPane/RightPane';
 import { useState } from 'react';
 const MaainContainer = () => {
-    const [tag,setTag]=useState('Personal');
+    const [tag,setTag]=useState('All');
     return ( 
         <div className="main-container">
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
