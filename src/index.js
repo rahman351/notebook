@@ -6,7 +6,7 @@ import MainContainer from './MainContainer/MainContainer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 if(localStorage.getItem("notebook") == null){
-  var data = {"data":[{"id":0,"color":"#3399ff","tag":"Personal","title":"Sample Title","content":"Sample Content"},{"id":1,"color":"#ff99cc","tag":"Personal","title":"Sample Title2 ","content":"Sample Content2"}],"tags":["Personal"]}
+  var data = {"data":[{"id":0,"color":"#3399ff","tag":"Personal","title":"Sample Title","content":"Sample Content"},{"id":1,"color":"#ff99cc","tag":"Personal","title":"Sample Title2 ","content":"Sample Content2"}],"tags":["Personal","Work","Sports","Others"]}
   localStorage.setItem("notebook", JSON.stringify(data));
 }
 root.render(

@@ -26,3 +26,24 @@
     color:white;
     cursor: pointer;
 }
+.new-tag-content{
+    width:60%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.new-tag-content:focus{
+    outline: none;
+}
+
+.new-tag-btn{
+    width:25px;
+    background-color: whitesmoke;
+    font-size: 15px;
+    border:1px solid black;
+}
+.new-tag-btn:hover{
+    color:white;
+    background-color: black;
+    border:0px;
+    cursor: pointer;
+}
