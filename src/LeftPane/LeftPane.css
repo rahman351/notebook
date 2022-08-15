@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+.left{
+    overflow-y: auto;
+}
 .left-item{
     display: flex;
     font-family: 'Rubik', sans-serif;
