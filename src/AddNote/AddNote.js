@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './AddNote.css'
 import addNewNote from './AddNoteUtil'
+import {getAllTags} from './AddNoteUtil'
 
 
 const AddNote = (props) => {
@@ -11,7 +12,7 @@ const AddNote = (props) => {
     const [content,setContent]=useState('');
     const [tag,setTag]=useState('Personal');
 
-    var allTags=["Personal","Work","Sports","Others"];
+    var allTags= getAllTags();
 
     
     useEffect(()=>{
@@ -36,7 +37,7 @@ const AddNote = (props) => {
             {
                 showFull && 
                     <div className="addnote-options">
-                    <select onChange={(e)=>{setTag(e.target.value)}}>
+                    <select onChange={(e)=>{setTag(e.target.value)}}  className="tag-selector">
                         {allTags.map(currentag=>{
                             return <option value={currentag}>{currentag}</option>
                         })}
@@ -48,7 +49,7 @@ const AddNote = (props) => {
                         <div className="choose-color-99ff99" onClick={()=> setColor('#99ff99')}/>
                         <div className="choose-color-ff9966" onClick={()=> setColor('#ff9966')}/>
                     </div>
-                    <button onClick={add}>Save</button>
+                    <button onClick={add}  className="addnote-save-btn" >Save</button>
                     </div>
             }
         </div>

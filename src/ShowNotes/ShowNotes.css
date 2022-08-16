@@ -27,3 +27,20 @@
     width:100%;
     height:70vh;
 }
+
+.delete-note{
+    font-size: 16px;
+    background-color: transparent;
+    border:1px solid black;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: black;
+    float: right;
+}
+.delete-note:hover{
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    
+
+}

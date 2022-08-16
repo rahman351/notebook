@@ -111,3 +111,28 @@
     padding:10px;
     border-radius: 10px;
 }
+
+.addnote-save-btn{
+    padding:3px 10px;
+    background-color: white;
+    border: none;
+    font-size: 15px;
+
+    border-radius: 5px;
+}
+.addnote-save-btn:hover{
+    background-color:black;
+    color: white;    
+}
+.tag-selector{
+    padding: 5px 10px;
+    font-size: 15px;
+    
+    border-radius: 5px;
+    background-color:white;
+
+}
+.tag-selector:hover{
+    background-color: black;
+    color: white;
+}

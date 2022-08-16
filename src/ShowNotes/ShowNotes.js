@@ -1,4 +1,5 @@
 import './ShowNotes.css'
+import {deleteNote} from './ShowNoteUtil'
 
 const ShowNotes = (props) => {
     let displayNotes = props.notes;
@@ -18,6 +19,7 @@ const ShowNotes = (props) => {
                     <div className="note-title"><b>{current.title}</b></div>
                     <div className="note-content">{current.content}</div>
                     <div className="note-content">Tag : {current.tag}</div>
+                    <button className="delete-note" onClick={()=>{deleteNote(current.id)}}>Delete</button>
                 </div>
             )}
             { 
